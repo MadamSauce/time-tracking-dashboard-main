@@ -19,11 +19,48 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
+    color: white;
 }
-
+body{
+    background-color: var(--Very-dark-blue);
+}
+.user-card-top img{
+    width: 25%;
+    height: auto;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'user-card work play study'
+    'user-card exercise social self-care'
+    ;
+    gap: 1rem;
+}
+.user-card{
+    grid-area: user-card;
+}
+.work{
+    grid-area: work;
+}
+.play{
+    grid-area: play;
+}
+.study{
+    grid-area: study;
+}
+.exercise{
+    grid-area: exercise;
+}
+.social{
+    grid-area: social;
+}
+.self-care{
+    grid-area: self-care;
+}
 .attribution{ 
-    font-size: 11px; 
+    font-size: 16px; 
     text-align: center; 
+    color: white;
 }
     
 .attribution a{ 
